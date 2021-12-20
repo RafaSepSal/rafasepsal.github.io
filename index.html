@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>The Last of Us - Fanpage</title>
+
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+</head>
+
+<style>
+	body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+		background-image: url(images/fondo.png);
+		color: white;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	
+	#trailer1{
+		position: relative;
+		top: -150px;
+		left: 350px;
+	}
+
+	#trailer2{
+		position: relative;
+		top: 20px;
+		left: 350px;
+	}
+</style>
+</head>
+
+
+<body>
+
+
+<!--------------------- ENCABEZADO -------------------------->
+
+<header>
+	<h1 class="demoHeaders" style="font-size: 45px; margin-top: -20px">The Last of Us - Fanpage</h1>
+</header>
+
+
+
+
+
+
+<!------------------------- MENÚ ------------------------------>
+
+
+<ul style="width:150px; margin-left:-40px; margin-top:80px; font-size:20px;" id="menu">
+	<li> <a href="index.html"> Inicio </a> </li>
+	
+	<li>Historia
+		<ul>
+			<li> <a href="historia1.html"> TLoU </a> </li>
+			<li> <a href="historia2.html"> TLoU2 </a> </li>
+		</ul>
+	</li>
+
+	<li> <a href="arte.html"> Libro de arte </a> </li>
+	
+	<li> <a href="productos.html"> Productos </a> </li>
+	
+	<li> <a href="contacto.html"> Contacta con nosotros </a> </li>
+
+</ul>
+
+
+<br>
+
+<!-------------------------- VÍDEOS ------------------------------>
+
+
+<center>  <iframe id="trailer1" width="560" height="315" src="https://www.youtube.com/embed/W01L70IGBgE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </center>
+
+
+<center>  <iframe id="trailer2" width="560" height="315" src="https://www.youtube.com/embed/qPNiIeKMHyg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </center>
+
+
+<br>
+
+<!----------------------- SCRIPTS JS ------------------------------->
+
+
+
+
+
+
+<script>
+
+	$( "#menu" ).menu();
+
+</script>
+
+
+
+
+</body>
+</html>

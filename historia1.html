@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>The Last of Us Fanpage</title>
+
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+</head>
+
+<style>
+	body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+		background-image: url(images/fondo.png);
+		color: white;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+
+	#logo{
+		position: relative;
+		top: 100px;
+	}
+
+	#historia{
+		position: relative;
+		top: 100px;
+		font-size: 15px;
+		background-color: black;
+		display: none;
+	}
+
+	#spoiler{
+		position: relative;
+		top: 100px;
+	}
+
+	#pie{
+		position: relative;
+		top: 300px;
+	}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!--------------------- ENCABEZADO -------------------------->
+
+<header>
+	<h1 class="demoHeaders" style="font-size: 45px; margin-top: -20px">The Last of Us - Fanpage</h1>
+</header>
+
+
+
+
+
+
+<!------------------------- MENÚ ------------------------------>
+
+
+<ul style="width:150px; margin-left:-40px; margin-top:80px; font-size:20px;" id="menu">
+	<li> <a href="index.html"> Inicio </a> </li>
+	
+	<li>Historia
+		<ul>
+			<li> <a href="historia1.html"> TLoU </a> </li>
+			<li> <a href="historia2.html"> TLoU2 </a> </li>
+		</ul>
+	</li>
+
+	<li> <a href="arte.html"> Libro de arte </a> </li>
+	
+	<li> <a href="productos.html"> Productos </a> </li>
+	
+	<li> <a href="contacto.html"> Contacta con nosotros </a> </li>
+
+</ul>
+
+
+<br>
+
+<!-------------------------- CUERPO ------------------------------>
+
+<center>  <img src="images/logo1.jpg" id="logo" style="width: 480px; height: 300px">  </center>
+
+<br> <center> <button id="spoiler">Ver spoiler</button> </center> <br>
+
+<center>  <p id="historia">  <br>
+	¿Qué pasaría si la naturaleza comenzara a reclamar lo suyo? Esta es la pregunta que da el giro argumental principal de la historia en The Last of Us. Los científicos han descubierto un hongo muy peligroso que hace que a las personas les broten estructuras parecidas a hongos valga la redundancia y que su conducta sea salvaje y peligrosa, el virus ha comenzado a mutar a la humanidad hasta convertirlos en algo parecido a zombis. La historia comienza 20 largos años después del brote del virus, la mayor parte de la humanidad ha desaparecido y quedan muy pocas personas que han sobrevivido al virus. Todo esto ha forzado a crear zonas de cuarentena, bajo ley marcial, gobernada por militares. Los militares hacen todo lo posible para mantener a la raza humana viva, por lo que hay estrictas normas de seguridad y las mínimas infracciones pueden conllevar la pena de muerte. Cualquier humano que sea detectado con el virus será sacrificado inmediatamente, sin peros ni excusas, no hay excepción. La historia gira entorno a Joel. Este recibe un encargo por parte de un amigo, una misión que podría costarle su libertad y vida: transportar a una joven huérfana de 14 años, llamada Ellie, sana y salva fuera de la zona de cuarentena hasta su amigo y/o jefe. Ellie, siendo menor de 20 años, no conoce cómo fue el mundo antes del brote del virus, por lo que se ha visto obligada a madurar radicalmente. Sus padres fueron probablemente "sacrificados" durante los primeros años del brote. Dos sucesos provocan que ambos sean "desterrados" de la Zona de cuarentena: Ellie genera un grave problema con sus compañeros de clases y Joel falla en la primera parte de la misión: sacarla sin que nadie se dé cuenta. Ambos son perseguidos por los militares y se ven obligados a tomar una ruta peligrosa y distinta a la establecida, la cual era para llegar sanos y salvos a su destino. Juntos se tendrán que abrir paso por las abandonadas y ahora dramáticamente cambiadas calles de Estados Unidos (ahora reclamadas por la madre naturaleza) hasta su destino.
+</p>  </center>
+<br>
+
+
+
+
+
+<!----------------------- SCRIPTS JS ------------------------------->
+
+
+
+
+
+
+<script>
+
+	$( "#menu" ).menu();
+
+	$("#spoiler").click(function(){
+		$("#historia").css({
+			"opacity": "100%",
+		})
+		$("#historia").fadeToggle("slow");
+	})
+
+</script>
+
+
+
+
+</body>
+
+<footer id="pie">
+	Created by: Rafael Sepúlveda
+</footer>
+
+</html>
